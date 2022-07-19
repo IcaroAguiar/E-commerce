@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@700&family=Poppins:wght@100;300;400;500&display=swap");
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Laila", sans-serif;
+  background-color: #5f5959;
+}
+h1,
+#titulo_categorias,
+#titulo_mais_comprados,
+h3,
+p,
+a, label {
+  color: white;
+  text-align: center;
+}
+.sessao_categorias {
+  text-align: left;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.sessao_mais_comprados {
+  text-align: left;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #0e3a74;
+  display: flex;
+  align-items: center;
+}
+footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e3a74;
+}
+#img_destaque {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+img {
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+}
+#img_navbar {
+  width: 100px;
+  height: auto;
+  padding: 0;
+}
+form {
+  background-color: #023e8e;
+  height: auto;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+}
+.formulario{
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+label{
+    padding: 10px;
+    padding-left: 20px;
+}
+input{
+font-family: "Laila", sans-serif;
+height: 20px;
+width: auto;
+padding-left: px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.links {
+  position: relative;
+  left: 900px;
+  padding: 17px;
+  font-size: large;
+  transition: 0, 5s;
+}
+a:hover {
+  color: black;
+  box-shadow: 0 0 100px #0000;
+  transition: 0.5s;
+}
+.nomeproduto,
+.categoria {
+  border: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+  border: medium solid #023e8e;
+  border-radius: 7%;
+  cursor: pointer;
+}
+#titulo_mais_comprados,
+#titulo_categorias {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+    #imagemcentral{
+        
+    }
