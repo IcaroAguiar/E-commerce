@@ -39,7 +39,6 @@ footer {
   color: white;
   height: 500px;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: #0e3a74;
 }
@@ -144,6 +143,7 @@ a:hover {
   flex-direction: column;
   padding: 50px;
   text-align: center;
-  align-items: center;
-  height: auto;
+  align-items:flex-s;
+  
+  
 }
