@@ -1,127 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Mania</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body>
-    <header>
-      <img
-          id="img_navbar"
-          src="img/logo.png"
-          alt="Logo da loja"
-        />
-      <nav class="navbar">
-        
-        
-          <div class="links"><a href="login.html"> Login </a></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Mania</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <img id="img_navbar" src="img/logo.png" alt="Logo da loja" />
+    <nav class="navbar">
+
+
+      <div class="links"><a href="login.html"> Login </a></div>
       <div class="links"><a href="#"> Carrinho </a></div>
-        <div class="links"><a href="#"> Categorias </a></div>
-        <div class="links"><a href="#"> Contato </a></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <img id="img_destaque" src="img/destaque.png" alt="Imagem destaque" />
-      <div id="titulo_categorias">
-        <h1>Categorias</h1>
-        <hr size="2" color="#023e8e" />
+      <div class="links"><a href="#"> Categorias </a></div>
+      <div class="links"><a href="#"> Contato </a></div>
       </div>
-      <section class="sessao_categorias">
-        <div>
-          <img src="img/consoles.png" alt="Consoles" />
-          <h2 class="categoria">Consoles</h2>
-          
-        </div>
-        <div>
-          <img src="img/Notebooks.png" alt="Notebooks" w />
-          <h2 class="categoria">Notebooks</h2>
-          
-        </div>
-        <div>
-          <img src="img/Perifericos.png" alt="Perifericos" />
-          <h2 class="categoria">Perifericos</h2>
-          
-        </div>
-        <div>
-          <img src="img/Hardware.png" alt="Hardware" />
-          <h2 class="categoria">Hardware</h2>
-          
-        </div>
-      </section>
-      <div id="titulo_mais_comprados">
-        <h1>Mais Comprados</h1>
-        <hr size="2" color="#023e8e" />
+    </nav>
+  </header>
+  <main>
+    <img id="img_destaque" src="img/destaque.png" alt="Imagem destaque" />
+    <div id="titulo_categorias">
+      <h1>Categorias</h1>
+      <hr size="2" color="#023e8e" />
+    </div>
+    <section class="sessao_categorias">
+      <div>
+        <img src="img/consoles.png" alt="Consoles" />
+        <h2 class="categoria">Consoles</h2>
+
       </div>
-      <section class="sessao_mais_comprados">
-        
-        
-        <div>
-          <img src="img/Produto.png" alt="NomeProduto" />
-          <h2 class="nomeproduto">NomeProduto</h2>
-          
-        </div>
-        <div>
-          <img src="img/Produto.png" alt="NomeProduto" />
-          <h2 class="nomeproduto">NomeProduto</h2>
-          
-        </div>
-        <div>
-          <img src="img/Produto.png" alt="NomeProduto" />
-          <h2 class="nomeproduto">NomeProduto</h2>
-          
-        </div>
-        <div>
-          <img src="img/Produto.png" alt="NomeProduto" />
-          <h2 class="nomeproduto">NomeProduto</h2>
-          
-        </div>
-        <div>
-          <img id="imagemcentral" src="img/img_central.png" alt="Imagem central da página">
-        </div>
-      </section>
-      <form action="recebeDados.js" method="post">
-        <div class="formulario">
-          <h1>Informe seu email para receber ofertas exclusivas</h1>
-          <label for="nome"> Insira seu nome</label>
-          <input id="nome" type="text" />
-          <label for="email"> Insira seu email</label>
-          <input id="email" type="text" />
-        </div>
-      </form>
-    </main>
-    <footer>
-      <div class="links_footer">
-        <h2>Conta</h2>
-        <p>Meus pedidos</p>
-        <p>Cadastrar</p>
+      <div>
+        <img src="img/Notebooks.png" alt="Notebooks" w />
+        <h2 class="categoria">Notebooks</h2>
+
       </div>
-      <div class="links_footer">
-        <h2>Departamentos</h2>
-        <p>Periféricos</p>
-        <p>Computadores</p>
-        <p>Notebooks</p>
-        <p>Hardware</p>
-        <p>Consoles</p>
-        <p>Monitores</p>
+      <div>
+        <img src="img/Perifericos.png" alt="Perifericos" />
+        <h2 class="categoria">Perifericos</h2>
+
       </div>
-      <div class="links_footer">
-        <h2>Redes Sociais</h2>
-        <p>Instagram</p>
-        <p>Facebook</p>
+      <div>
+        <img src="img/Hardware.png" alt="Hardware" />
+        <h2 class="categoria">Hardware</h2>
+
       </div>
-      <div class="links_footer">
-        <h2>SAC</h2>
-        <p>(XX) XXXXX-XXXX</p>
+    </section>
+
+    <div id="div_central">
+      <img id="img_central" src="img/img_central.png" alt="Imagem central da página">
+      <h1 id="titulo_topico_central">Quem somos nós</h1>
+      <p id="sobre">Somos uma empresa de tecnologia voltada para área de games, vendemos aqui o material de maior
+        qualidade e preço justo, entendemos você pois também vivemos nesse mundo e estamos aqui para atender todas as
+        suas necessidades</p>
+    </div>
+
+
+
+
+
+    <div id="titulo_mais_comprados">
+      <h1>Mais Comprados</h1>
+      <hr size="2" color="#023e8e" />
+    </div>
+
+
+
+    <section class="sessao_mais_comprados">
+
+
+      <div>
+        <img src="img/Produto.png" alt="NomeProduto" />
+        <h2 class="nomeproduto">NomeProduto</h2>
+
       </div>
-      <div class="links_footer">
-        <h2>Fale Conosco</h2>
-        <p>seuemail@mail.com.br</p>
+      <div>
+        <img src="img/Produto.png" alt="NomeProduto" />
+        <h2 class="nomeproduto">NomeProduto</h2>
+
       </div>
-    </footer>
-  </body>
+      <div>
+        <img src="img/Produto.png" alt="NomeProduto" />
+        <h2 class="nomeproduto">NomeProduto</h2>
+
+      </div>
+      <div>
+        <img src="img/Produto.png" alt="NomeProduto" />
+        <h2 class="nomeproduto">NomeProduto</h2>
+      </div>
+    </section>
+    <form action="recebeDados.js" method="post">
+      <div class="formulario">
+        <h1>Informe seu email para receber ofertas exclusivas</h1>
+        <label for="nome"> Insira seu nome</label>
+        <input id="nome" type="text" />
+        <label for="email"> Insira seu email</label>
+        <input id="email" type="text" />
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="links_footer">
+      <h2>Conta</h2>
+      <p>Meus pedidos</p>
+      <p>Cadastrar</p>
+    </div>
+    <div class="links_footer">
+      <h2>Departamentos</h2>
+      <p>Periféricos</p>
+      <p>Computadores</p>
+      <p>Notebooks</p>
+      <p>Hardware</p>
+      <p>Consoles</p>
+      <p>Monitores</p>
+    </div>
+    <div class="links_footer">
+      <h2>Redes Sociais</h2>
+      <p>Instagram</p>
+      <p>Facebook</p>
+    </div>
+    <div class="links_footer">
+      <h2>SAC</h2>
+      <p>(XX) XXXXX-XXXX</p>
+    </div>
+    <div class="links_footer">
+      <h2>Fale Conosco</h2>
+      <p>seuemail@mail.com.br</p>
+    </div>
+  </footer>
+</body>
+
 </html>
