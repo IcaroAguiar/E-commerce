@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@700&family=Poppins:wght@100;300;400;500&display=swap");
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Laila", sans-serif;
+    background-image:url(img/img_central.png) ;
+}
+.container{
+    border: 5px double #09069e;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top:25%;
+    margin-left: -200px;
+    padding-bottom:200px;
+    padding-left:25px;
+    height: 20%;
+}
+input,label{
+    width: 70%;
+    margin-right: 10px;
+    font-family: "Laila", sans-serif;
+    
+    
+
+}
+label{
+    padding: 15px;
+    color: #09069e;
+}
+input{
+    color: black;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+a{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
