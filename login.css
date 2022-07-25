@@ -40,10 +40,22 @@ input{
     border: 2px solid black;
     border-radius: 5%;
 }
-a{
+#link_form{
     padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+}
+
+#botao_form{
+    font-family: "Laila", sans-serif;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    
+}
+#logo{
+    width: auto;
+    height: 100px;
 }
