@@ -6,29 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Mania</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
   <header>
-    
-    <nav class="navbar">
 
+    <div>
       <a href="index.html"><img id="img_navbar" src="img/logo.png" alt="Logo da loja" /></a>
-      <div class="links"><a href="login.html"> Login </a></div>
-      <div class="links"><a href="#"> Carrinho </a></div>
-      <div class="links"><a href="#"> Categorias </a></div>
-      <div class="links"><a href="#"> Contato </a></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <img id="img_destaque" src="img/destaque.png" alt="Imagem destaque" />
-    <div id="titulo_categorias">
-      <h1>Categorias</h1>
-      <hr size="2" color="#FFFFF" />
     </div>
+    <p class="nav-brand h4 text-white " href="login.html">
+      Game Mania
+    </p>
+     <div class="container d-flex align-items-center justify-content-end">
+      <nav class="navbar navbar-expand-md  ">        
+        <ul class="navbar-nav">
+        
+          
+          
+        
+          <li class="nav-item active px-5">
+          <a class="nav-link h5 text-white " href="login.html">
+            Login
+          </a>
+        </li>
+
+        <li class="nav-item px-5">
+          <a class="nav-link disabled h5 " href="#">
+            Carrinho
+          </a>
+        </li>
+        <li class="nav-item disabled px-5">
+          <a class="nav-link disabled h5 " href="#">
+            Categorias
+          </a>
+        </li>
+        <li class="nav-item disabled px-5 ">
+          <a class="nav-link disabled h5" href="#">
+            Contato
+          </a>
+        </li>
+      </ul>
+  </nav>   
+</div>
+</header>
+<main>
+  <img id="img_destaque" src="img/destaque.png" alt="Imagem destaque" />
+  <div id="titulo_categorias">
+    <h1>Categorias</h1>
+    <hr size="2" or="#FFFFF" />
+  </div>
+  <div class="container">
     <section class="sessao_categorias">
       <div>
         <img src="img/consoles.png" alt="Consoles" />
@@ -51,24 +81,24 @@
 
       </div>
     </section>
-
+  </div>
+  <div class="container-fluid">
     <div id="div_central">
       <img id="img_central" src="img/img_central.png" alt="Imagem central da página">
-      <h1 id="titulo_topico_central">Quem somos nós</h1>
-      <p id="sobre">Somos uma empresa de tecnologia voltada para área de games, vendemos aqui o material de maior
-        qualidade e preço justo, entendemos você pois também vivemos nesse mundo e estamos aqui para atender todas as
-        suas necessidades</p>
+      <div class="container">
+        <h1 class="titulo_mais_comprados">Quem somos</h1>
+        </divclass="container-md">
+        <p id="sobre">Somos uma empresa de tecnologia voltada para área de games, vendemos aqui o material de maior
+          qualidade e preço justo, entendemos você pois também vivemos nesse mundo e estamos aqui para atender todas as
+          suas necessidades</p>
+      </div>
     </div>
-
-
-
 
 
     <div id="titulo_mais_comprados">
       <h1>Mais Comprados</h1>
-      <hr size="2" color="#FFFFF" />
+      <hr size="2" or="#FFFFF" />
     </div>
-
 
 
     <section class="sessao_mais_comprados">
@@ -97,43 +127,47 @@
     <form action="recebeDados.js" method="post">
       <div class="formulario">
         <h1>Informe seu email para receber ofertas exclusivas</h1>
-        <label for="nome"> Insira seu nome</label>
+        <label for="nome">
+          Insira seu nome</label>
         <input id="nome" type="text" />
-        <label for="email"> Insira seu email</label>
+        <label for="email">
+          Insira seu email</label>
         <input id="email" type="text" />
-        <button id="botao_form"> Enviar </button>
+        <button id="botao_form">
+          Enviar
+        </button>
       </div>
     </form>
-  </main>
-  <footer>
-    <div class="links_footer">
-      <h2>Conta</h2>
-      <p>Meus pedidos</p>
-      <p>Cadastrar</p>
-    </div>
-    <div class="links_footer">
-      <h2>Departamentos</h2>
-      <p>Periféricos</p>
-      <p>Computadores</p>
-      <p>Notebooks</p>
-      <p>Hardware</p>
-      <p>Consoles</p>
-      <p>Monitores</p>
-    </div>
-    <div class="links_footer">
-      <h2>Redes Sociais</h2>
-      <p>Instagram</p>
-      <p>Facebook</p>
-    </div>
-    <div class="links_footer">
-      <h2>SAC</h2>
-      <p>(XX) XXXXX-XXXX</p>
-    </div>
-    <div class="links_footer">
-      <h2>Fale Conosco</h2>
-      <p>seuemail@mail.com.br</p>
-    </div>
-  </footer>
+</main>
+<footer>
+  <div class=" _footer">
+    <h2>Conta</h2>
+    <p>Meus pedidos</p>
+    <p>Cadastrar</p>
+  </div>
+  <div class=" _footer">
+    <h2>Departamentos</h2>
+    <p>Periféricos</p>
+    <p>Computadores</p>
+    <p>Notebooks</p>
+    <p>Hardware</p>
+    <p>Consoles</p>
+    <p>Monitores</p>
+  </div>
+  <div class=" _footer">
+    <h2>Redes Sociais</h2>
+    <p>Instagram</p>
+    <p>Facebook</p>
+  </div>
+  <div class=" _footer">
+    <h2>SAC</h2>
+    <p>(XX) XXXXX-XXXX</p>
+  </div>
+  <div class=" _footer">
+    <h2>Fale Conosco</h2>
+    <p>seuemail@mail.com.br</p>
+  </div>
+</footer>
 </body>
 
 </html>
