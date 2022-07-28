@@ -23,7 +23,7 @@ label {
   text-align: center;
   
 }
-.sessao_categorias,
+
 .sessao_mais_comprados {
   text-align: left;
   color: white;
@@ -33,13 +33,6 @@ label {
   padding-bottom: 100px;
 }
 
-header {
-  width: 100%;
-  height: auto;
-  background-color: #0E3A74;
-  display: flex;
-  align-items: center;
-}
 footer {
   color: white;
   height: 500px;
@@ -52,11 +45,8 @@ footer {
   height: auto;
   padding: 0;
 }
-img {
-  width: 300px;
-  height: 200px;
-  padding: 30px;
-}
+
+
 #img_navbar {
   width: 120px;
   height: auto;
@@ -99,12 +89,8 @@ a:hover {
   box-shadow: 0 0 100px #0000;
   transition: 0.5s;
 }
-.nomeproduto,
-.categoria {
-  
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
+#nomeproduto
+{
 
   border: medium solid white;
   border-radius: 7%;
@@ -127,21 +113,14 @@ a:hover {
   text-align: justify;
   margin-right: 10px;
 }
-#titulo_topico_central {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  position: absolute;
-  top: 1550px;
-  left: 1000px;
-}
-#div_central {
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+
+#central {
+  width: 100%;
+  height: auto;
   background-color: #023e8e;
+  text-align: justify;
+  justify-content: center;
+  
 }
 .links_footer {
   display: flex;
@@ -158,4 +137,12 @@ font-family: "Laila", sans-serif;
 color: white;
 margin-right: 25px ;
 margin-left: 25px;
+}
+hr{
+  color: white;
+ 
+} 
+#topico{
+  padding-top: 30px;
+  padding-bottom: 15px;
 }

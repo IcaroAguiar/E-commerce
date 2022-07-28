@@ -9,165 +9,254 @@
   <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
 
+  
 </head>
 
 <body>
-  <header>
+  <!-- Inicio do header -->
+  <header class="container-fluid mh-100 d-flex align-items-center" style="background-color:#0E3A74;">
 
     <div>
       <a href="index.html"><img id="img_navbar" src="img/logo.png" alt="Logo da loja" /></a>
     </div>
-    <p class="nav-brand h4 text-white " href="login.html">
+    <p class="nav-brand h2 text-white " href="login.html">
       Game Mania
     </p>
-     <div class="container d-flex align-items-center justify-content-end">
-      <nav class="navbar navbar-expand-md  ">        
+    <div class="container-md d-flex align-items-center justify-content-end">
+      <nav class="navbar navbar-expand-md  ">
         <ul class="navbar-nav">
-        
-          
-          
-        
+
+
           <li class="nav-item active px-5">
-          <a class="nav-link h5 text-white " href="login.html">
-            Login
-          </a>
-        </li>
+            <a class="nav-link fs-5 text-white " href="login.html">
+              Login
+            </a>
+          </li>
 
-        <li class="nav-item px-5">
-          <a class="nav-link disabled h5 " href="#">
-            Carrinho
-          </a>
-        </li>
-        <li class="nav-item disabled px-5">
-          <a class="nav-link disabled h5 " href="#">
-            Categorias
-          </a>
-        </li>
-        <li class="nav-item disabled px-5 ">
-          <a class="nav-link disabled h5" href="#">
-            Contato
-          </a>
-        </li>
-      </ul>
-  </nav>   
-</div>
-</header>
-<main>
+          <li class="nav-item px-5 d-none d-lg-block">
+            <a class="nav-link disabled fs-5 " href="#">
+              Carrinho
+            </a>
+          </li>
+          <li class="nav-item disabled px-5 d-none d-lg-block">
+            <a class="nav-link disabled fs-5 " href="#">
+              Categorias
+            </a>
+          </li>
+          <li class="nav-item disabled px-5 d-none d-lg-block">
+            <a class="nav-link disabled fs-5 " href="#">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Fim do header, nav -->
+
   <img id="img_destaque" src="img/destaque.png" alt="Imagem destaque" />
-  <div id="titulo_categorias">
-    <h1>Categorias</h1>
-    <hr size="2" or="#FFFFF" />
-  </div>
-  <div class="container">
-    <section class="sessao_categorias">
-      <div>
-        <img src="img/consoles.png" alt="Consoles" />
-        <h2 class="categoria">Consoles</h2>
 
-      </div>
-      <div>
-        <img src="img/Notebooks.png" alt="Notebooks" w />
-        <h2 class="categoria">Notebooks</h2>
+  <main>
 
-      </div>
-      <div>
-        <img src="img/Perifericos.png" alt="Perifericos" />
-        <h2 class="categoria">Perifericos</h2>
-
-      </div>
-      <div>
-        <img src="img/Hardware.png" alt="Hardware" />
-        <h2 class="categoria">Hardware</h2>
-
-      </div>
-    </section>
-  </div>
-  <div class="container-fluid">
-    <div id="div_central">
-      <img id="img_central" src="img/img_central.png" alt="Imagem central da página">
-      <div class="container">
-        <h1 class="titulo_mais_comprados">Quem somos</h1>
-        </divclass="container-md">
-        <p id="sobre">Somos uma empresa de tecnologia voltada para área de games, vendemos aqui o material de maior
-          qualidade e preço justo, entendemos você pois também vivemos nesse mundo e estamos aqui para atender todas as
-          suas necessidades</p>
+    <!-- Titulo das Categorias -->
+    <div class="container d-flex flex-column justify-content-center align-items-center pt-5 h-auto ">
+      <p class="h1">Categorias</p>
+      <div class="container w-50 p-1">
+        <hr />
       </div>
     </div>
 
+<!-- sessao das categorias -->
+<section class="container-fluid d-flex p-3 ">
 
-    <div id="titulo_mais_comprados">
-      <h1>Mais Comprados</h1>
-      <hr size="2" or="#FFFFF" />
+  <div class="container-md d-flex flex-column align-items-center justify-content-center p-3">  
+    <img class="img-fluid h-100 d-none d-lg-block" src="img/consoles.png" alt="Consoles" />
+
+    <div id="topico">
+      <p id="nomeproduto" class="fs-5 p-3 d-none d-lg-block ">Consoles</p>
     </div>
-
-
-    <section class="sessao_mais_comprados">
-
-
-      <div>
-        <img src="img/Produto.png" alt="NomeProduto" />
-        <h2 class="nomeproduto">NomeProduto</h2>
-
-      </div>
-      <div>
-        <img src="img/Produto.png" alt="NomeProduto" />
-        <h2 class="nomeproduto">NomeProduto</h2>
-
-      </div>
-      <div>
-        <img src="img/Produto.png" alt="NomeProduto" />
-        <h2 class="nomeproduto">NomeProduto</h2>
-
-      </div>
-      <div>
-        <img src="img/Produto.png" alt="NomeProduto" />
-        <h2 class="nomeproduto">NomeProduto</h2>
-      </div>
-    </section>
-    <form action="recebeDados.js" method="post">
-      <div class="formulario">
-        <h1>Informe seu email para receber ofertas exclusivas</h1>
-        <label for="nome">
-          Insira seu nome</label>
-        <input id="nome" type="text" />
-        <label for="email">
-          Insira seu email</label>
-        <input id="email" type="text" />
-        <button id="botao_form">
-          Enviar
-        </button>
-      </div>
-    </form>
-</main>
-<footer>
-  <div class=" _footer">
-    <h2>Conta</h2>
-    <p>Meus pedidos</p>
-    <p>Cadastrar</p>
+    
   </div>
-  <div class=" _footer">
-    <h2>Departamentos</h2>
-    <p>Periféricos</p>
-    <p>Computadores</p>
-    <p>Notebooks</p>
-    <p>Hardware</p>
-    <p>Consoles</p>
-    <p>Monitores</p>
+
+  <div class="container-md d-flex flex-column align-items-center justify-content-center p-3">
+  <img class="img-fluid" src="img/Notebooks.png" alt="Notebooks" />
+  <div id="topico">
+    <p id="nomeproduto" class="fs-5 p-3">Notebooks</p>
   </div>
-  <div class=" _footer">
-    <h2>Redes Sociais</h2>
-    <p>Instagram</p>
-    <p>Facebook</p>
+   
   </div>
-  <div class=" _footer">
-    <h2>SAC</h2>
-    <p>(XX) XXXXX-XXXX</p>
+
+
+  <div class="container-md d-flex flex-column align-items-center justify-content-center p-3  ">
+
+    
+      <img class="img-fluid " src="img/Perifericos.png" alt="Perifericos" />
+      <div id="topico">
+        <p id="nomeproduto" class="fs-5 p-3  ">Perifericos</p>
+      </div>
+    
+      
+      
   </div>
-  <div class=" _footer">
-    <h2>Fale Conosco</h2>
-    <p>seuemail@mail.com.br</p>
+  
+  
+  <div class="container-md d-flex flex-column align-items-center justify-content-center p-3" > 
+   
+    <img class="img-fluid d-none d-lg-block" src="img/Hardware.png" alt="Hardware" />
+   <div id="topico">
+    <p  id="nomeproduto" class=" fs-5 p-3 d-none d-lg-block ">Hardware</p>
   </div>
-</footer>
+   
+    
+  
+
+</section>
+    
+
+
+
+      <!-- Topico central da pagina (inicio) -->
+    <section>
+      <div id="central"  class="container-fluid d-flex align-items-center justify-content-center  h-100 p-5 " >
+        <div class="d-none d-lg-block">
+          <div class="container-md h-auto p-3">
+            <img class="img-fluid h-100 w-100 " src="img/img_central.png" alt="Imagem central da página">
+          </div>
+        </div>
+        
+        <div id="central" class="container-md d-flex flex-column align-items-center ">
+          <div class="container-sm  ">
+            <p class="h1">Quem somos</p>
+          </div>
+
+          <div class="container-sm  fs-5 p-5 ">
+            <p>Somos uma empresa de vendas completamente dedicadas e inserida no mundo dos games e da tecnologia, venha nos conhecer melhor!</p>
+          <a class="" href="#">Saiba mais -></a>   
+        </div>
+
+        </div>
+
+        </div>
+      </section>
+
+      <!-- Fim do topico central -->
+
+ 
+        <!-- <div class="container">
+          
+          </div class="container-md">
+
+          
+        </div>
+      </div>
+      <div id="titulo_mais_comprados">
+        <h1>Mais Comprados</h1>
+        <div class="container w-50 p-1">
+          <hr />
+        </div>
+      </div> -->
+      <!-- Titulo da sessao mais comprados -->
+      <div class="container d-flex flex-column justify-content-center align-items-center pt-5 h-auto ">
+        <p class="h1">Mais Comprados</p>
+        <div class="container w-50 p-1">
+          <hr />
+        </div>
+      </div>
+      <!-- Fim do titulo -->
+
+
+      <!-- Sessao mais comprados(inicio) -->
+
+
+      <section class="container-fluid d-flex p-3 ml-0  ">
+
+        <div class="container-md d-flex flex-column align-items-center justify-content-center p-3 mw-5-%">  
+          <img class="img-fluid d-none d-lg-block" src="img/Produto.png" alt="NomeProduto" />
+      
+          <div id="topico">
+            <p id="nomeproduto" class="fs-5 p-3 d-none d-lg-block">NomeProduto</p>
+          </div>
+          
+        </div>
+      
+        <div class="container-md d-flex flex-column align-items-center justify-content-center p-3">
+        <img class="img-fluid " src="img/Produto.png" alt="NomeProduto" />
+        <div id="topico">
+          <p id="nomeproduto" class="fs-5 p-3">NomeProduto</p>
+        </div>
+         
+        </div>
+      
+      
+        <div class="container-md d-flex flex-column align-items-center justify-content-center p-3">
+            <img class="img-fluid" src="img/Produto.png" alt="NomeProduto" />
+            <div id="topico">
+              <p id="nomeproduto" class="fs-5 p-3">NomeProduto</p>
+            </div>
+            
+        </div>
+        
+       
+        <div class="container-md d-flex flex-column align-items-center justify-content-center p-3"> 
+         <img class="img-fluid d-none d-lg-block" src="img/Produto.png" alt="NomeProduto" />
+         <div id="topico">
+          <p  id="nomeproduto" class=" fs-5 p-3 d-none d-lg-block">NomeProduto</p>
+        </div>
+        </div>
+      
+      </section>
+      <!-- Formulario do site (inicio) -->
+      <form action="recebeDados.js" method="post">
+        <div class="formulario">
+          <h1>Informe seu email para receber ofertas exclusivas</h1>
+          <label for="nome">
+            Insira seu nome</label>
+          <input id="nome" type="text" />
+          <label for="email">
+            Insira seu email</label>
+          <input id="email" type="text" />
+          <button id="botao_form">
+            Enviar
+          </button>
+        </div>
+      </form>
+      <!-- Formulario do site (fim) -->
+
+
+
+    </div>
+  </main>
+  <footer>
+    <div class=" _footer">
+      <p>Conta</p>
+      <p>Meus pedidos</p>
+      <p>Cadastrar</p>
+    </div>
+    <div class=" _footer">
+      <p>Departamentos</p>
+      <p>Periféricos</p>
+      <p>Computadores</p>
+      <p>Notebooks</p>
+      <p>Hardware</p>
+      <p>Consoles</p>
+      <p>Monitores</p>
+    </div>
+    <div class=" _footer">
+      <p>Redes Sociais</p>
+      <p>Instagram</p>
+      <p>Facebook</p>
+    </div>
+    <div class=" _footer">
+      <p>SAC</p>
+      <p>(XX) XXXXX-XXXX</p>
+    </div>
+    <div class=" _footer">
+      <p>Fale Conosco</p>
+      <p>seuemail@mail.com.br</p>
+    </div>
+  </footer>
 </body>
 
 </html>
+</body>
