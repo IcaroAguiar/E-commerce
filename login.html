@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="script.js"></script>
+    <script type="text/language" language="javascript" src=".js/jquery-1.3.2-vsdoc2.js"></script>
     <title>Página de Login</title>
   </head>
 
   <body>
     <a href="index.html">
-      <img id="logo" src="img/logo.png" alt="Logo da loja"
+      <img id="logo" class="img-fluid" src="img/logo.png" alt="Logo da loja"
     /></a>
 
     <main>
-      <div>
-        <form action="recebeDados.js" method="post">
-          <div class="container">
-            <label for="User"> Insira o nome de usuário</label>
-            <input type="text" id="User" />
-            <label for="Senha"> Insira sua senha</label>
-            <input type="text" id="Senha" />
-            <button id="botao_form">Entrar</button>
+      <form method="get">
+        <div
+          class="container-sm d-flex align-items-center p-0 mt-5 w-75"
+          id="formulario"
+        >
+          <div class="container-sm d-flex flex-column align-items-center">
+            <label for="user" class="form-label d-none d-lg-block">
+              Insira o nome de usuário</label
+            >
+            <label for="user" class="form-label d-lg-none"
+              >Insira o usuario</label
+            >
+            <input type="text" class="form-control" id="user" />
+          </div>
+          <div class="container-sm d-flex flex-column align-items-center">
+            <label for="senha" class="form-label"> Insira sua senha</label>
+            <input type="password" class="form-control" id="senha" />
+          </div>
+          <div class="container-sm">
+            <button type="submit" onclick="pegaDadosLogin()" class="btn btn-outline-light pt-1 mx-0">
+              Entrar
+            </button>
+          </div>
+          <div class="container-md p-0" id="links">
             <a id="link_form" href="#">Esqueceu sua senha?</a>
             <a id="link_form" href="#">Cadastre-se</a>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </main>
   </body>
 </html>
