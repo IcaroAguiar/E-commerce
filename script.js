@@ -19,9 +19,41 @@ function pegaDados() {
 
   if (inputNome.value.length == 0 || inputEmail.value.length == 0) {
     erro();
+    
   } else {
     mostraValor();
   }
+}
+
+//Função SlideShow
+  function intervalo(){
+    setInterval(slideShow, 6000);
+    
+  }
+  
+let contagem = 0;
+
+function slideShow() {
+  
+  
+  contagem++;
+
+  if (contagem == 1) {
+    $("#slide1").show();
+    $("#slide2").hide();
+    $("#slide3").hide();
+  } else if(contagem == 2){
+    $("#slide1").hide();
+    $("#slide2").show();
+    $("#slide3").hide();
+  } else if(contagem == 3){
+    $("#slide1").hide();
+    $("#slide2").hide();
+    $("#slide3").show();
+    contagem = 0;
+  }
+
+  
 }
 
 // Funcionalidade pagina Login
@@ -39,14 +71,7 @@ function pegaDadosLogin() {
 
 function logar() {
   alert("Você foi logado com sucesso e pode retornar para a pagina principal");
-  setInterval(logado(), 1000);
-
 }
 function erroLogin() {
   alert("Você precisa preencher todos os campos");
-}
-
-function logado(){
-  $("#usuario").show();
-  $("#login").hide();
 }

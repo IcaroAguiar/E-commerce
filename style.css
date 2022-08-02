@@ -68,4 +68,7 @@ hr {
   padding-top: 30px;
   padding-bottom: 15px;
 }
-
+#slide2,#slide3{
+  width: 100%;
+  height: auto;
+}
